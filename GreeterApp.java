@@ -11,6 +11,15 @@ public class GreeterApp {
 		System.out.print("Enter your name: ");
 		String userName = scnr.nextLine();
 		System.out.println(greeting1.greet(userName));
+		SimonGreeter simon1 = new SimonGreeter(userGreeting);
+		System.out.println(simon1.greet(userName));
+		LoudGreeter loud1 = new LoudGreeter(userGreeting);
+		loud1.addVolume();
+		System.out.println(loud1.greet(userName));
+		System.out.print("Enter tagName:");
+		String tagName = scnr.nextLine();
+		HtmlGreeter html1 = new HtmlGreeter(userGreeting, tagName);
+		System.out.println(html1.greet(userName));
 		scnr.close();
 	}
 }

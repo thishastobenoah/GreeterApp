@@ -1,7 +1,8 @@
 package GreeterApp;
 
 public class Greeter {
-	private String greeting;
+	//field
+	protected String greeting;
 	
 	//constructor
 	public Greeter (String greeting) {
@@ -18,4 +19,5 @@ public class Greeter {
 	public String greet (String name) {
 		return (greeting + ", " + name + "!");
 	}
+	
 }
